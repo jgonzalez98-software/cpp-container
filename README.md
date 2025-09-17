@@ -2,7 +2,6 @@
 
 This is a basic Docker container for a C++ program
 
-## Status Badge
 
 [![C++ CI (Make)](https://github.com/jgonzalez98-software/cpp-container/actions/workflows/build.yml/badge.svg)](https://github.com/jgonzalez98-software/cpp-container/actions/workflows/build.yml)
 
