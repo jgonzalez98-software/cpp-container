@@ -1,0 +1,24 @@
+name: C++ CI (Make)
+
+on:
+  push:
+    branches: [ "main", "ci/cd" ]
+  # If you want CI on PRs too, uncomment:
+  # pull_request:
+  #   branches: [ "main", "ci/cd" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential
+
+      - name: Build (Makefile)
+        run: |
+          make -j"$(nproc)"
