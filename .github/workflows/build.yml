@@ -3,9 +3,6 @@ name: C++ CI (Make)
 on:
   push:
     branches: [ "main", "ci/cd" ]
-  # If you want CI on PRs too, uncomment:
-  # pull_request:
-  #   branches: [ "main", "ci/cd" ]
 
 jobs:
   build:
